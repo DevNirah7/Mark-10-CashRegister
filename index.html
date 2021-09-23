@@ -8,30 +8,31 @@
     <title>Cash Register</title>
 </head>
 <body>
+<section class="main-sect">
     <div class="nav">
-        <h1>Cash Register</h1>
+        <h1>CASH REGISTER</h1>
     </div>
 
     <p>Determine the amount you have to return back to your customer upon receiving cash</p>
 
-    <div>Bill Amount:</div>
+    <div id="bill-amt"><h3>Bill Amount:</h3></div>
     <input class="input-bill-amt" placeholder="Enter the bill amount here">
-    <button class="nxt-btn">Next</button>
+    <button class="nxt-btn">Enter</button>
+    <p class="error-msg"></p>
 
     <div class="amt-div">
 
-    <div>Cash receieved: </div>
+    <div id="amt-paid"><h3>Cash receieved:</h3></div>
     <input class="input-amt-paid" placeholder="Enter the amout paid by the customer">
     <button class="chk-btn">Check</button>
 
-    <p class="error-msg"></p>
+    <p class="cash-msg"></p>
     
     </div>
 
-    
     <div class="change-div">
         <table>
-            <caption>Change to be returned:</caption>
+            <caption id="change-rtn"><h4></h4></caption>
             <tr>
                 <th>No.of notes</th>
                 <td class="no-of-notes"></td>
@@ -53,8 +54,8 @@
                 <td>1</td>
             </tr>
         </table>
-    
     </div>
+</section>
    
     <script src="app.js"></script>
 </body>

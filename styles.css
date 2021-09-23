@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root
+{
+--grey:#D1D5DB;
+--darkgrey: #6B7280;
+--darkergrey:#4B5563;
+}
+* {
+  margin: 0rem;  
+  padding: 0rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+body
+{
+    background-color:var(--darkgrey);
+}
+
+
+h1 
+{
+    font-size: 6vh;
+}
+
+h2
+{
+    font-size:4vh;
+ 
+}
+
+h3
+{
+    font-size: 3vh;
+
+}
+
+h4
+{
+
+    font-size: 3vh;
+}
+
+.main-sect
+{
+    width: 80%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: 0rem auto;
+    padding:2rem;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--grey); 
+}
+.nav
+{
+    margin:1rem auto 1rem auto;
+    max-width: 500px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Bebas Neue";
+    padding:2rem;
+    background-color: black;
+    color: var(--grey);
+    
+}
+
+#bill-amt
+{
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.input-bill-amt
+{
+    margin: 0.5rem auto 0.5rem auto;
+    text-align: left;
+    width: 90%;
+    padding: 1rem;
+    display: 50px;
+    display: block;
+    
+}
+
+.nxt-btn
+{
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1.15rem;
+    border: none;
+    margin: 1rem auto;
+    background-color: var(--darkgrey);
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.error-msg
+{
+    color: red;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#amt-paid
+{
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.input-amt-paid
+{
+    margin: 0.5rem auto 0.5rem auto;
+    text-align: left;
+    width: 90%;
+    padding: 1rem;
+    display: 50px;
+    display: block;
+}
+
+.chk-btn
+{
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1.15rem;
+    border: none;
+    margin: 1rem auto;
+    background-color: var(--darkgrey);
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.cash-msg
+{
+    color: red;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+table, th, td 
+{
+    padding: 1rem;
+    margin-top: 0.5rem;
+    color: black;
+    background-color: var(--darkgrey);
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+#change-rtn
+{
+   margin-bottom: 1rem;
+}
+
+.no-of-notes {
+    background-color: white;
+    font-weight: bold;
+}
