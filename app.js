@@ -3,32 +3,45 @@ var amountPaid=document.querySelector(".input-amt-paid");
 var checkButton=document.querySelector(".chk-btn");
 var nextButton=document.querySelector(".nxt-btn");
 var amountDiv=document.querySelector(".amt-div");
+var changeDiv=document.querySelector(".change-div");
 var errorMessage=document.querySelector(".error-msg");
 var noOfNotes=document.querySelectorAll(".no-of-notes")
 
 var notes= [2000,500,100,20,10,5,1];
 
+amountDiv.style.display="none";
+changeDiv.style.display="none";
 
 nextButton.addEventListener("click", function validate()
 {
     hideMsg();
     if(billAmount.value > 0)
     { 
-       if(Number(amountPaid.value) >= Number(billAmount.value))
-       {
-       var amountToBeReturned= amountPaid.value - billAmount.value;
-       console.log(amountToBeReturned);
-       calculateChange(amountToBeReturned);
-       }
-       else
-       {
-       showMsg("Cash amount should atleast be equal to the bill amount!")
-       }
+        amountDiv.style.display="block";
     }
     else
     {
      showMsg("Amount should be greater than zero!");    
     }
+}
+);
+
+checkButton.addEventListener("click", function validateAmount()
+{
+    hideMsg();
+    if(Number(amountPaid.value) >= Number(billAmount.value))
+       {
+       var amountToBeReturned= amountPaid.value - billAmount.value;
+       console.log(amountToBeReturned);
+       amountDiv.style.display="block";
+       changeDiv.style.display="block";
+       calculateChange(amountToBeReturned);
+       }
+       else
+       {
+       showMsg("Cash amount should atleast be equal to the bill amount!")
+       changeDiv.style.display="none";
+       } 
 }
 );
 
