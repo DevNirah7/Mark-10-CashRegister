@@ -47,15 +47,14 @@ h4
     width: 80%;
     max-width: 500px;
     min-height: 200px;
-    margin: 0rem auto;
-    padding:2rem;
-    justify-content: center;
+    margin: 1rem auto;
+    padding:2rem 2rem;
     text-align: center;
     background-color: var(--grey); 
 }
 .nav
 {
-    margin:1rem auto 1rem auto;
+    margin:0.5rem auto 1rem auto;
     max-width: 500px;
     text-align: center;
     justify-content: center;
@@ -137,19 +136,20 @@ h4
 
 table, th, td 
 {
-    padding: 1rem;
-    margin-top: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
     color: black;
     background-color: var(--darkgrey);
     border: 2px solid black;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
     table-layout: auto;
 }
 
 #change-rtn
 {
-   margin-bottom: 1rem;
+   margin: 1rem auto;
+   text-align: center;
 }
 
 .no-of-notes {
