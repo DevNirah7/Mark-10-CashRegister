@@ -23,7 +23,7 @@ nextButton.addEventListener("click", function validate()
     }
     else
     {
-     showMsg("Amount should be greater than zero!");    
+     showMsg("Kindly ensure that the amount is entered and it is greater than zero!");    
      amountDiv.style.display="none";
      changeDiv.style.display="none";
     }
